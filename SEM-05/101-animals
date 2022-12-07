@@ -37,10 +37,10 @@ class Jaguar(JungleAnimal):
     def print(self):
         print(f"Jaguar({self.name},{self.age},{self.sound})")
     def daily_task(self,animals):
-        for e in animals:
-            if(type(e)==Lemur or type(e)==Human):
-                print(f"{self.name} the Jaguar hunted down {e.name} the {type(e).__name__}")
-                animals.remove(e)
+        for i in range(len(animals)):
+            if(type(animals[i])==Lemur or type(animals[i])==Human):
+                print(f"{self.name} the Jaguar hunted down {animals[i].name} the {type(animals[i]).__name__}")
+                animals.remove(animals[i])
                 return
 class Lemur(JungleAnimal):
     pass
