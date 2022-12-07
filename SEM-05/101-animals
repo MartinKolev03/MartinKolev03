@@ -7,7 +7,7 @@ class InvalidParameterError(Exception):
 class InvalidAgeError(InvalidParameterError):
     def __init__(self,age,*args):
         super().__init__(age,*args)
-class InvalidAgeError(InvalidParameterError):
+class InvalidSoundError(InvalidParameterError):
     def __init__(self, sound, *args):
         super().__init__(sound, *args)
 class JungleAnimal():
